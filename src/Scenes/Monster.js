@@ -78,7 +78,7 @@ class Monster extends Phaser.Scene {
 
     update() {
         let my = this.my;    // create an alias to this.my for readability
-        // Inside the update() method:
+        
         if (this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A).isDown) {
             for (let part in my.sprite) {
                 my.sprite[part].x -= 1; // Adjust speed as needed
